@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентов</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script type="module" defer src="main.js"></script>
+</head>
+
+<body>
+  <section id="main">
+    <div class="container">
+      <h1 class="mb-3">Список студентов</h1>
+
+      <form action="#" class="mb-3 needs-validation" id="form">
+
+        <div class="form-check ">
+          <input
+          data-required="true"
+          data-max-length="20"
+          data-min-length="2"
+          id="add-name"
+          class="mb-3 form-control"
+          type="text"
+          placeholder="Имя">
+        </div>
+
+        <div class="form-check has-validation">
+          <input
+          data-max-length="20"
+          data-min-length="2"
+          id="add-lastname"
+          class="mb-3 form-control"
+          type="text"
+          placeholder="Отчество">
+        </div>
+
+        <div class="form-check has-validation">
+          <input
+          data-max-length="20"
+          data-min-length="2"
+          data-required="true"
+          id="add-surname"
+          class="mb-3 form-control"
+          type="text"
+          placeholder="Фамилия">
+        </div>
+
+        <div class="form-check has-validation">
+          <input
+          id="add-birth"
+          class="mb-3 form-control"
+          type="date"
+          placeholder="Дата рождения"
+          value="1990-06-14"
+          min="1900-01-01"
+          max="2023-09-01">
+        </div>
+
+        <div class="form-check has-validation">
+          <input
+          id="add-startyear"
+          class="mb-3 form-control"
+          type="number"
+          placeholder="Год начала обучения"
+          value="2003"
+          min="2000"
+          max="2023">
+        </div>
+
+        <div class="form-check has-validation">
+          <input
+          data-required="true"
+          id="add-faculty"
+          class="mb-3 form-control"
+          type="text"
+          placeholder="Факультет">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Отправить данные</button>
+
+      </form>
+
+      <form action="#" id="filter-form" class="mb-3">
+        <h2>Фильтрация</h2>
+
+        <input
+        id="filter-name"
+        class="mb-3 form-control"
+        type="text"
+        placeholder="ФИО">
+
+        <input
+        id="filter-faculty"
+        class="mb-3 form-control"
+        type="text"
+        placeholder="Факультет">
+
+        <input
+        id="filter-start"
+        class="mb-3 form-control"
+        type="text"
+        placeholder="Год начала обучения">
+
+        <input
+        id="filter-end"
+        class="mb-3 form-control"
+        type="text"
+        placeholder="Год окончания обучения">
+
+      </form>
+
+      <div id="list">
+
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
